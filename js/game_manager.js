@@ -163,6 +163,10 @@ GameManager.prototype.move = function (direction) {
                     // Converge the two tiles' positions
                     tile.updatePosition(positions.next);
 
+                    //play the merge sound here
+
+                    var audio = new Audio('meta/Swing.mp3');
+                    audio.play();
                     // Update the score
                     self.score += merged.value;
 
